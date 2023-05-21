@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../bundle/images/favicon.png">
+    <script src="https://kit.fontawesome.com/3192b7dfa9.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./bundle/css/style.css"> -->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container-header">
+        <div class="navbar">
+            <div class="logo">
+                <img class="logo" src="../bundle/images/logo.png" alt="" />
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Account</li>
+                    <li class="cart">
+                        <img src="../bundle/images/cart-icon.png" class="cart-icon" alt="" />
+                        <p id="count" class="count">0</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <h2 class="checkout" style="font-family: 'Roboto', sans-serif;"> Checkout</h2>
+    
+    <div class="row">
+        <!-- Items List -->
+        <div class="cart-list">    
+            <div class="main-div">
+                <div class="container">
+                    <form action="">
+                        <div class="addressInfo">
+                            <div class="cart-parent">
+                                <h2 style="font-family: 'Roboto', sans-serif;">Shopping Cart</h2>
+                                <table id="table">
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="item">
+                                                <img class="product-img" src="../bundle/images/product1.jpg" alt="" />
+                                                <div class="cart-row">
+                                                    <p class="product-info">
+                                                        <b><span id="productName1">1 Piece Digital Printed Loose Fabric</span></b>
+                                                        <br />
+                                                        <span id="productType1">Shirt</span>
+                                                        <br />
+                                                        <span id="productLength1">3</span>
+                                                    </p>
+                                                    <img class="bin" src="../bundle/images/bin.png" alt="" onclick="onclick(removeItem(this))"/>
+                                                </div>
+                                        </td>
+                                        <td>
+                                            <p class="price">690pkr</p>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <button class="minus">+</button>
+                                                <p><span id="quantity1">0</span></p>
+                                                <button class="plus">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p class="total">Rs.2,070.00 PKR</p>
+                                        </td>
+                                    </tr>                                    
+                                </table>
+                                <h3 class="list-footer" style=" font-family: 'Inter', sans-serif; font-size:15px;">SUBTOTAL <span id="totalPrice">0pkr</span></h3>
+                                <p class="list-footer" style="font-size:'8px';">All charges are billed in PKR. While the content of your cart is currently displayed in , the checkout will use PKR at the most current exchange rate.</p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+<!-- Billing Address Section -->
+<div class="billing-info">
+    <div class="main-div">
+        <div class="container">
+            <form action="">
+                <h2>Billing Information</h2>
+                <div class="addressInfo">
+                    <div class="billingaddress">
+                        <h3 class="billinghead">Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Name">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="example@xyz.com">
+                        
+                        
+                        <div class="box-card">
+                            <div class="row-3">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder="xyz Street, ABC Town">
+                            </div>
+                            <div class="row-4">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                            </div>
+                        </div>
+                        <div class="box-card">
+                            <div class="row-5">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="State">
+                            </div>
+                            <div class="row-6">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="zip code">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Payment Card Section -->
+                    <div class="billingaddress">
+                        <h3 class="head3">Payment Information</h3>
+                        <div class="box-card">
+                            <div class="row-7">
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Name">
+                            </div>
+                            <div class="row-8">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber"
+                                    placeholder="1111-2222-3333-4444">
+                            </div>
+                        </div>
+                        <div class="box-card">
+                            <div class="row-9">
+                                <label for="expmonth">Expiry Date</label>
+                                <input type="date" name="expdate">
+                            </div>
+                            <div class="row-10">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="3-digit">
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color: blue; font-size: 50px;"></i>
+                            <i class="fa fa-cc-mastercard" style="color: #f21c11; font-size: 50px;"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameaddress" class="shipping-address">
+                    Shipping
+                    address same as billing
+                </label>
+                <button class="btn">Continue to Checkout</button>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <p class="company-name">Nishatlinen</p>
+          <p class="company-email">info@mysite.com</p>
+          <p class="company-copyright">©2023 by Nishatlinen. Proudly made by Aptech Team</p>
+        </div>
+      </footer>
+    <script src="../bundle/scripts/script.js"></script>
+</body>
+
+</html>
