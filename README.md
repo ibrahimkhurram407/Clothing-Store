@@ -2,10 +2,6 @@
 <h1 align="center">Hair Revival Hub</h1>
 
 <p align="center">
-  <img src="path/to/logo.png" alt="Hair Revival Hub Logo">
-</p>
-
-<p align="center">
   Welcome to Hair Revival Hub, your ultimate destination for all things hair care! Our website is designed to provide you with valuable information, tips, and techniques to help you achieve and maintain healthy, beautiful hair.
 </p>
 
