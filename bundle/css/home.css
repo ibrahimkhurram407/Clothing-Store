@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* universal fonts and colors */
+h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  color: #fff;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #fff;
+}  
+
+/* nav bar css */
 nav {
     padding: 1px 20px;
     background-color: #3CAEA3;
@@ -10,40 +25,25 @@ nav {
     text-align: center;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    color: #fff;
-
-}
-
-
-p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+  min-width: 294px;
 }
 
 nav h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
 }
 
 nav img {
-    height: 70px;
-    margin-right: 500px;
+  height: 70px;
+  margin-right: 20vw;
 }
 
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 10px; */
-  }
-  
-  h1 {
-    margin: 0;
-  }
-
+/* nav elements css */
   ul {
     list-style-type: none;
     margin: 0;
@@ -70,9 +70,9 @@ header {
   }
   
   ul li img{
-    height: 10px;
+    height: 40px;
     margin: 0px;
-    margin-top: 22px;
+    /* margin-top: 22px; */
   }
 
   ul li a:hover {
@@ -80,6 +80,19 @@ header {
     color: #fff;
   }
 
+  .login {
+    /* font-size: 20px; */
+    border: 1px solid #8e918e ;
+    border-radius: 20px;
+    /* padding: 1px 20px 3px 20px; */
+    background-color: #FFC857;
+    /* text-align: center;
+    align-items: center; */
+  }
+
+
+/* Main section started
+Hero section */
 .hero {
     display: grid;
     grid-template-columns: 0.5fr, 0.5fr;
@@ -93,7 +106,7 @@ header {
     align-items: center;
     text-align: center;
     height: 100%;
-    width: 0.5fr;
+    width: 50vw;
 }
 
 .hero-text h1 {
@@ -113,10 +126,14 @@ header {
 .hero img{
     animation: levitate 4s linear infinite;
     grid-column: 2/3;
-    margin-right: 200px;
     height: 80vh;
 }
 
+.hero:nth-child(2) {
+  margin-right: 200px;
+}
+
+/* Levitating Animation */
 @keyframes levitate {
     0% {
       transform: translateY(0);
@@ -129,17 +146,130 @@ header {
     }
   }
 
+/* Call to actions button */
 .cta {
     padding: 7px 15px;
     font-family: 'Open Sans', sans-serif;
     border: none;
+    padding: 15px 20px;
     background-color: #FFC857;
     border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
+/* divider */
 .line {
     border:0.5px solid black;
     width: 100%;
     position: absolute;
     top: 100vh;
 }
+
+/* About Us Section */
+.aboutUs {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  height: 600px;
+  margin-bottom: 200px;
+}
+
+.aboutUs > div:nth-child(1) {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.aboutUs div > div:nth-child(1) {
+  max-width: 500px;
+  min-width: 200px;
+  margin-left: 300px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #3CAEA3;
+  z-index: 2;
+  transform: translateX(10vw);
+}
+
+
+
+.aboutUs > div:nth-child(1) h1 {
+  font-size: 32px;
+}
+
+.aboutUs > div:nth-child(1) img {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50% +80px, -50% +80px);
+}
+
+.aboutUs > div:nth-child(1) p {
+  font-size: 16px;
+}
+
+.aboutUs > div:nth-child(2) {
+  height: 800px;
+  margin-right: 300px;
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: end;
+  position: absolute;
+  transform: translateX(-10vw);
+  z-index: 1;
+}
+
+.aboutUs > div:nth-child(2) img {
+  height: 700px;
+}
+
+/* Featured Products Section */
+
+.img_box img {
+  height:100%;
+  width:100%;
+}
+
+.splide__track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_box {
+  object-fit: hidden; /*Maintain aspect ratio*/
+  background-color: #FFC857;
+}
+
+.featured-products {
+  background-color: #3CAEA3;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-products h1 {
+  font-size: 40px;
+}
+
+/* .splide__slide {
+  height: 400px;
+} */

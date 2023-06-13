@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./bundle/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+</head>
+<body>
+    <section class="featured-products">
+        <div>
+            <h1>Featured Products</h1>
+        </div>
+        <div id="featuredProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./bundle/images/product1.png" alt="Product1" class="fpe">
+                    <img src="./bundle/images/product2.png" alt="Product2" class="fpe">
+                    <img src="./bundle/images/product3.png" alt="Product3" class="fpe">
+                    <div class="carousel-caption">
+                        <div>
+                            <h4>Product 1</h4>
+                            <p>$14.99</p>
+                        </div>
+                        <div>
+                            <h4>Product 2</h4>
+                            <p>$39.99</p>
+                        </div>
+                        <div>
+                            <h4>Product 3</h4>
+                            <p>$32.99</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./bundle/images/product4.png" alt="Product4" class="fpe">
+                    <img src="./bundle/images/product5.png" alt="Product5" class="fpe">
+                    <img src="./bundle/images/product6.png" alt="Product6" class="fpe">
+                    <div class="carousel-caption">
+                        <div>
+                            <h4>Product 4</h4>
+                            <p>$14.99</p>
+                        </div>
+                        <div>
+                            <h4>Product 5</h4>
+                            <p>$39.99</p>
+                        </div>
+                        <div>
+                            <h4>Product 6</h4>
+                            <p>$32.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredProductsCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredProductsCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">Slide 01</li>
+                  <li class="splide__slide">Slide 02</li>
+                  <li class="splide__slide">Slide 03</li>
+              </ul>
+        </div>
+      </section>
+      <script>
+        import '@splidejs/splide/css';
+        new Splide( '.splide' ).mount();
+      </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <style>
+            /* Featured Products Section */
+
+.carousel-caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+}
+
+.carousel-caption div {
+    margin: 0 100px;
+}
+
+.featured-products > div:nth-child(1)  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+  height: fit-content;
+}
+
+.featured-products > div:nth-child(2)  {
+  /* transform: translateY(-50px); */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50% +80px, -50% +80px); */
+}
+
+/* Featured Products Elements */
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+}
+
+h4 {
+    color: #fff;
+}
+
+.fpe {
+  background-color: #FFC857;
+  height: 350px;
+  width: 285px;
+}
+
+.slide {
+  /* margin-top: 5px; */
+}
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  /* height: 400px; */
+  width: 100%;
+}
+
+.carousel-inner .item {
+  display: flex;
+}
+
+.product-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-item {
+  margin: 0;
+}
+
+
+.carousel-inner .item .product-group img {
+  width: 50%; /* Adjust the width as needed to fit three products */
+}
+
+.carousel-control {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #000;
+  text-shadow: none;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.carousel-control:hover {
+  opacity: 1;
+}
+
+        </style>
+
+        <style>
+            
+/*.featured-products > div:nth-child(1)  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+  height: fit-content;
+}
+
+.featured-products > div:nth-child(2)  {
+  /* transform: translateY(-50px); */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50% +80px, -50% +80px); */
+}
+
+/* Featured Products Elements */
+.fpe {
+  background-color: #FFC857;
+  height: 350px;
+  width: 285px;
+  aspect-ratio: 1;
+}
+
+.slide {
+  /* margin-top: 5px; */
+}
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.carousel-inner .item {
+  display: flex;
+}
+
+.product-group {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-item {
+  /* transform: translate(-50vw,0); */
+  margin: 0;
+}
+
+.carousel-inner .item .product-group img {
+  width: 50%; /* Adjust the width as needed to fit three products */
+}
+
+.carousel-control {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #000;
+  text-shadow: none;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.carousel-control:hover {
+  opacity: 1;
+}
+
+.featured-products {
+  background: #3CAEA3;
+  width: 99.1vw;
+  /* max-height: 400px; */
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 200px;  */
+}
+
+.carousel-item {
+  padding: 40px;
+}
+
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  width: 100%;
+  /* transform: translate(-30vw,5vh); */
+}
+
+.carousel-caption div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* .active {
+  display: flex;
+  
+  width: 500px;
+  justify-self: center;
+
+} */
+*/
+        </style>
+</body>
+</html>
