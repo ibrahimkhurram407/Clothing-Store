@@ -29,7 +29,7 @@ Hair Revival Hub is a comprehensive platform dedicated to hair care. Our goal is
 
 ## Installation
 To access the website locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/username/repository.git`
+1. Clone the repository: `git clone https://github.com/ibrahimkhurram407/Hair-Revival-Hub.git`
 2. Open the project directory: `cd repository`
 3. Open the `index.html` file in your preferred web browser.
 
