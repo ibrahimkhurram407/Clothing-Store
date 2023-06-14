@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Revival Hub</title>
-    <link rel="stylesheet" href="./bundle/css/home.css">
-    <link rel="icon" href="./bundle/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair Revival Hub</title>
+  <link rel="stylesheet" href="./bundle/css/home.css">
+  <link rel="icon" href="./bundle/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
 
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./bundle/splide-4.1.3/dist/css/splide.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bundle/splide-4.1.3/dist/css/splide.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 </head>
 
 <body>
-    <nav>
-        <header>
-            <h1>Hair Revival Hub</h1>
-        </header>
-        <img src="./bundle/images/accent-nav.png">
-        <!-- <ul>
+  <nav>
+    <header>
+      <h1>Hair Revival Hub</h1>
+    </header>
+    <img src="./bundle/images/accent-nav.png">
+    <!-- <ul>
             <li><a href="#">Home</a></li>
             <li><a onclick="revealDropDown()">Shop</a></li>
             <li><a href="page3.html">Gallery</a></li>
@@ -30,223 +30,252 @@
             <li><a class="login" href="page3.html">Login</a></li>
             <li><img src="./bundle/images/cart-icon.png" alt=""></li>
         </ul> -->
-        <ul class="nav justify-content-end">
-            <li>
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown"
-                    data-bs-toggle="dropdown">Shop</a>
-                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
-                    <li><a href="#" class="dropdown-item">Products</a></li>
-                    <li><a href="#" class="dropdown-item">Equipments</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown" data-bs-toggle="dropdown">
-                    <img src="./bundle/images/account-icon.png" style="cursor:pointer;" alt="Account"
-                        onclick="redirect(this)">
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="shopDropdown">
-                    <li><a href="#" class="dropdown-item">Sign Up</a></li>
-                    <li><a href="#" class="dropdown-item">Login</a></li>
-                    <li><a href="#" class="dropdown-item">Settings</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <img src="./bundle/images/cart-icon.png" style="cursor:pointer;" alt="Cart" onclick="redirect(this)">
-            </li>
+    <ul class="nav justify-content-end">
+      <li>
+        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown" data-bs-toggle="dropdown">Shop</a>
+        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+          <li><a href="#" class="dropdown-item">Products</a></li>
+          <li><a href="#" class="dropdown-item">Equipments</a></li>
         </ul>
-    </nav>
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to Hair Revival Hub</h1>
-            <p>Revive your hair with our expert treatments and products</p>
-            <button class="cta" style="margin-right: 70px;">Explore Treatment</button>
-            <button class="cta">Shop Hair Button</button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown" data-bs-toggle="dropdown">
+          <img src="./bundle/images/account-icon.png" style="cursor:pointer;" alt="Account" onclick="redirect(this)">
+        </a>
+        <div class="dropdown-menu" aria-labelledby="shopDropdown">
+          <a href="#">Sign Up</a>
+          <a href="#">Login</a>
+          <a href="#">Settings</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <img src="./bundle/images/cart-icon.png" style="cursor:pointer;" alt="Cart" onclick="redirect(this)">
+      </li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Hair Revival Hub</h1>
+      <p>Revive your hair with our expert treatments and products</p>
+      <button class="cta" style="margin-right: 70px;">Explore Treatment</button>
+      <button class="cta">Shop Hair Button</button>
 
+    </div>
+    <div class="hero-img">
+      <img src="https://tunatheme.com/tf/html/arowana-preview/arowana/img/slider/1-1.png" alt="Levitating Image"
+      id="hero-img">
+    </div>
+  </section>
+  <div class="line"></div>
+  <section class="aboutUs">
+    <div>
+      <div>
+        <img src="./bundle/images/accent-section.png" alt="nav-accent" class="accent-image">
+        <div class="text-div">
+          <h1>About Us</h1>
+          <p>HairRevivalHub is your one-stop destination for all your hair care needs. We understand the importance of
+            beautiful and healthy hair, and we're here to help you achieve just that. With a wealth of knowledge and
+            expertise, we bring you the latest insights, tips, and techniques to elevate your hair care routine. Whether
+            you're looking for solutions to common hair problems or seeking inspiration for stunning hairstyles,
+            HairRevivalHub is here to guide you every step of the way. Join our community and unlock the secrets to
+            radiant, luscious locks.</p>
         </div>
-        <img src="https://tunatheme.com/tf/html/arowana-preview/arowana/img/slider/1-1.png" alt="Levitating Image"
-            id="hero-img" class="hero-img">
-    </section>
-    <div class="line"></div>
-    <section class="aboutUs">
-        <div>
-            <div>
-                <img src="./bundle/images/accent-section.png" alt="nav-accent">
-                <h1>About Us</h1>
-                <p style="color: #fff;">HairRevivalHub is your one-stop destination for all your hair care needs. We understand the
-                    importance of
-                    beautiful and healthy hair, and we're here to help you achieve just that. With a wealth of knowledge
-                    and
-                    expertise, we bring you the latest insights, tips, and techniques to elevate your hair care routine.
-                    Whether you're looking for solutions to common hair problems or seeking inspiration for stunning
-                    hairstyles, HairRevivalHub is here to guide you every step of the way. Join our community and unlock
-                    the
-                    secrets to radiant, luscious locks.</p>
-            </div>
-        </div>
-        <div>
-            <img src="./bundle/images/aboutus.jpeg" alt="About-Us-Image">
-        </div>
-    </section>
-    <section style="padding: 40px;background-color: #3CAEA3;">
-        <div class="featured-products">
-            <h1>Featured Products</h1>
-            <div class="splide">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product1.png" alt="">
-                        <div class="caption">
-                          <h4>Product 1</h4>
-                          <p>$19.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product2.png" alt="">
-                        <div class="caption">
-                          <h4>Product 2</h4>
-                          <p>$29.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product3.png" alt="">
-                        <div class="caption">
-                          <h4>Product 3</h4>
-                          <p>$14.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product4.png" alt="">
-                        <div class="caption">
-                          <h4>Product 4</h4>
-                          <p>$49.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product5.png" alt="">
-                        <div class="caption">
-                          <h4>Product 5</h4>
-                          <p>$9.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product6.png" alt="">
-                        <div class="caption">
-                          <h4>Product 6</h4>
-                          <p>$24.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product7.png" alt="">
-                        <div class="caption">
-                          <h4>Product 7</h4>
-                          <p>$15.99</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="img_box">
-                        <img src="./bundle/images/product8.png" alt="">
-                        <div class="caption">
-                          <h4>Product 8</h4>
-                          <p>$35.99</p>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+      </div>
+    </div>
+    <div>
+      <img src="./bundle/images/aboutus.jpeg" alt="About-Us-Image" class="about-image">
+    </div>
+  </section>
+  <section style="padding: 40px;background-color: #3CAEA3;">
+    <div class="featured-products">
+      <h1>Featured Products</h1>
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product1.png" alt="">
+                <div class="caption">
+                  <h4>Product 1</h4>
+                  <p>$19.99</p>
                 </div>
               </div>
-            </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product2.png" alt="">
+                <div class="caption">
+                  <h4>Product 2</h4>
+                  <p>$29.99</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product3.png" alt="">
+                <div class="caption">
+                  <h4>Product 3</h4>
+                  <p>$14.99</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product4.png" alt="">
+                <div class="caption">
+                  <h4>Product 4</h4>
+                  <p>$49.99</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product5.png" alt="">
+                <div class="caption">
+                  <h4>Product 5</h4>
+                  <p>$9.99</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product6.png" alt="">
+                <div class="caption">
+                  <h4>Product 6</h4>
+                  <p>$24.99</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product7.png" alt="">
+                <div class="caption">
+                  <h4>Product 7</h4>
+                  <p>$15.99</p>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="img_box">
+                <img src="./bundle/images/product8.png" alt="">
+                <div class="caption">
+                  <h4>Product 8</h4>
+                  <p>$35.99</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-    </section>
-    <section class="EHR-sec">
-      <div class="EHR">
-        <h1>Easy Home Remedies</h1>
-        <div>
-          <div class="remedy">
-            <img src="./bundle/images/hair-oil.png" alt="" class="tm-people">
-            <h4>Homemade Hair Oils</h4>
-            <p>Discover the wonders of homemade hair oils and remedies that will transform your hair naturally. Experience the magic of coconut oil's nourishment, milk and honey's softening touch, and the hydrating effects of banana and olive oil. Achieve stunning shine with avocado and olive oil, strengthen your locks with egg yolk or yogurt, and maintain scalp health with apple cider vinegar, brown sugar and coconut oil, and lemon and egg treatments. Say goodbye to expensive products and embrace the simplicity of these kitchen remedies for gorgeous, healthy hair. Always ensure to research and follow instructions for optimal results.</p>
-          </div>
-          <div class="remedy">
-            <img src="./bundle/images/scalp-care.jpg" alt="" class="tm-people">
-            <h4>Natural Hair Masks</h4>
-            <p>Unlock the secrets to healthy, lustrous hair using simple ingredients from your kitchen. From coconut oil's nourishing properties to milk and honey's softening effects, these DIY remedies provide affordable solutions for various hair concerns. Try banana and olive oil for hydration, avocado and olive oil for shine, and egg yolk or yogurt for strengthening. Apple cider vinegar, brown sugar and coconut oil, and lemon and egg offer additional benefits for scalp health and hair vitality. Embrace the power of nature and bid farewell to hair troubles with these easy-to-make home remedies. Remember to research and follow instructions for best results.</p>
-          </div>
-          <div class="remedy">
-            <img src="./bundle/images/hair-care.webp" alt="" class="tm-people">
-            <h4>Scalp Care Tips</h4>
-            <p>Achieve a healthy scalp and promote optimal hair growth with these essential scalp care tips. Start by regularly cleansing your scalp to remove dirt, excess oil, and product buildup. Incorporate gentle exfoliation to stimulate circulation and remove dead skin cells. Maintain a balanced diet rich in vitamins, minerals, and antioxidants to nourish your scalp from within. Avoid excessive heat styling and opt for protective hairstyles to minimize damage. Don't forget to protect your scalp from the sun's harmful rays with hats or SPF-infused hair products. </p>
-          </div>
       </div>
-    </section>
-    <section class="home-testimonial">
-      <div class="container-fluid">
-          <div class="row d-flex justify-content-center testimonial-pos">
-              <div class="col-md-12 pt-4 d-flex justify-content-center">
-                  <h1>Testimonials</h1>
-              </div>
-              <div class="col-md-12 d-flex justify-content-center">
-                  <h2>Explore our customer's experience</h2>
-              </div>
-          </div>
-          <section class="home-testimonial-bottom">
-              <div class="container testimonial-inner">
-                  <div class="row d-flex justify-content-center">
-                      <div class="col-md-4 style-3">
-                          <div class="tour-item ">
-                              <div class="tour-desc bg-white">
-                                  <div class="tour-text color-grey-3 text-center">&ldquo;I was skeptical about the effectiveness of homemade hair oils, but HairRevivalHub proved me wrong. Their recommended oils have transformed my dry and damaged hair into silky smooth locks. I can't believe the difference it has made. Thank you!&rdquo;</div>
-                                  <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt=""></div>
-                                  <div class="link-name d-flex justify-content-center">Emily D.</div>
-                                  <div class="link-position d-flex justify-content-center"></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4 style-3">
-                          <div class="tour-item ">
-                              <div class="tour-desc bg-white">
-                                  <div class="tour-text color-grey-3 text-center">&ldquo;"I've struggled with hair loss for years, but ever since I started using the tips and remedies from HairRevivalHub, my hair has become thicker and healthier. I can't thank them enough for their valuable information and effective solutions!"&rdquo;</div>
-                                  <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
-                                  <div class="link-name d-flex justify-content-center">Sarah M.</div>
-                                  <div class="link-position d-flex justify-content-center"></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4 style-3">
-                          <div class="tour-item ">
-                              <div class="tour-desc bg-white">
-                                  <div class="tour-text color-grey-3 text-center">&ldquo;"HairRevivalHub is my go-to resource for all things hair care. Their easy home remedies have saved me time and money, and I've seen remarkable improvements in the texture and shine of my hair. Highly recommended!"&rdquo;</div>
-                                  <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
-                                  <div class="link-name d-flex justify-content-center">Rachel W.</div>
-                                  <div class="link-position d-flex justify-content-center"></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-          </section>
+    </div>
+    </div>
   </section>
+  <section class="EHR-sec">
+    <div class="EHR">
+      <h1>Easy Home Remedies</h1>
+      <div>
+        <div class="remedy">
+          <img src="./bundle/images/hair-oil.png" alt="" class="tm-people">
+          <h4>Homemade Hair Oils</h4>
+          <p>Discover the wonders of homemade hair oils and remedies that will transform your hair naturally. Experience
+            the magic of coconut oil's nourishment, milk and honey's softening touch, and the hydrating effects of
+            banana
+            and olive oil. Achieve stunning shine with avocado and olive oil, strengthen your locks with egg yolk or
+            yogurt, and maintain scalp health with apple cider vinegar, brown sugar and coconut oil, and lemon and egg
+            treatments. Say goodbye to expensive products and embrace the simplicity of these kitchen remedies for
+            gorgeous, healthy hair. Always ensure to research and follow instructions for optimal results.</p>
+        </div>
+        <div class="remedy">
+          <img src="./bundle/images/scalp-care.jpg" alt="" class="tm-people">
+          <h4>Natural Hair Masks</h4>
+          <p>Unlock the secrets to healthy, lustrous hair using simple ingredients from your kitchen. From coconut oil's
+            nourishing properties to milk and honey's softening effects, these DIY remedies provide affordable solutions
+            for various hair concerns. Try banana and olive oil for hydration, avocado and olive oil for shine, and egg
+            yolk or yogurt for strengthening. Apple cider vinegar, brown sugar and coconut oil, and lemon and egg offer
+            additional benefits for scalp health and hair vitality. Embrace the power of nature and bid farewell to hair
+            troubles with these easy-to-make home remedies. Remember to research and follow instructions for best
+            results.</p>
+        </div>
+        <div class="remedy">
+          <img src="./bundle/images/hair-care.webp" alt="" class="tm-people">
+          <h4>Scalp Care Tips</h4>
+          <p>Achieve a healthy scalp and promote optimal hair growth with these essential scalp care tips. Start by
+            regularly cleansing your scalp to remove dirt, excess oil, and product buildup. Incorporate gentle
+            exfoliation to stimulate circulation and remove dead skin cells. Maintain a balanced diet rich in vitamins,
+            minerals, and antioxidants to nourish your scalp from within. Avoid excessive heat styling and opt for
+            protective hairstyles to minimize damage. Don't forget to protect your scalp from the sun's harmful rays
+            with hats or SPF-infused hair products. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="home-testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Testimonials</h1>
+        </div>
+        <div class="col-md-12">
+          <h2>Explore our customers' experiences</h2>
+        </div>
+      </div>
+      <section class="home-testimonial-bottom">
+        <div class="container">
+          <div class="testimonial-inner">
+            <div class="tour-item">
+              <div class="tour-desc bg-white">
+                <div class="tour-text">&ldquo;I was skeptical about the effectiveness of homemade hair oils, but
+                  HairRevivalHub proved me wrong. Their recommended oils have transformed my dry and damaged hair into
+                  silky smooth locks. I can't believe the difference it has made.&rdquo;</div>
+                <div class="d-flex justify-content-center">
+                  <img class="tm-people" src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"
+                    alt="">
+                </div>
+                <div class="link-name">Emily D.</div>
+              </div>
+            </div>
+            <div class="tour-item">
+              <div class="tour-desc bg-white">
+                <div class="tour-text">&ldquo;I've struggled with hair loss for years, but ever since I started using
+                  the tips and remedies from HairRevivalHub, my hair has become thicker and healthier. I can't thank
+                  them
+                  enough for their valuable information and effective solutions!&rdquo;</div>
+                <div class="d-flex justify-content-center">
+                  <img class="tm-people"
+                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&
+                    src=https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+                <div class="link-name">Sarah M.</div>
+              </div>
+            </div>
+            <div class="tour-item">
+              <div class="tour-desc bg-white">
+                <div class="tour-text">&ldquo;HairRevivalHub is my go-to resource for all things hair care. Their easy
+                  home remedies have saved me time and money, and I've seen remarkable improvements in the texture and
+                  shine of my hair. Highly recommended!&rdquo;</div>
+                <div class="d-flex justify-content-center">
+                  <img class="tm-people"
+                    src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+                </div>
+                <div class="link-name">Rachel W.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
   <footer>
     <div>
       <div class="fs">
@@ -258,18 +287,18 @@
         <p>+92 026554065620</p>
       </div>
       <div class="fs">
-        <p>©2023 by Hair Revival Hub. Proudly created with Wix.com</p>
-      </div>  
+        <p>©2023 by Hair Revival Hub. Proudly created by Aptech Team</p>
+      </div>
     </div>
   </footer>
 
-    <script src="./bundle/splide-4.1.3/dist/js/splide.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="./bundle/scripts/home-frontEnd.js"></script>
+  <script src="./bundle/splide-4.1.3/dist/js/splide.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./bundle/scripts/home-frontEnd.js"></script>
 </body>
 
 </html>
