@@ -11,7 +11,7 @@ h1 {
 p{
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  color: #fff;
+  /* color: #fff; */
 }  
 
 /* nav bar css */
@@ -98,6 +98,7 @@ Hero section */
     grid-template-columns: 0.5fr, 0.5fr;
     grid-template-rows: 1fr;
     gap: 10px;
+    margin-bottom: 200px;
 }
 
 .hero-text {
@@ -180,6 +181,7 @@ Hero section */
   height: 800px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -198,8 +200,9 @@ Hero section */
   align-items: center;
   text-align: center;
   background-color: #3CAEA3;
+  flex-wrap: wrap;
   z-index: 2;
-  transform: translateX(10vw);
+  /* transform: translateX(10vw); */
 }
 
 
@@ -209,11 +212,12 @@ Hero section */
 }
 
 .aboutUs > div:nth-child(1) img {
-  height: 80px;
-  position: absolute;
+  height: auto; 
+  width: 80px;
+  /* position: absolute;
   top: 0;
-  left: 0;
-  transform: translate(-50% +80px, -50% +80px);
+  left: 0; 
+  transform: translate(-50% +80px, -50% +80px); */
 }
 
 .aboutUs > div:nth-child(1) p {
@@ -230,7 +234,7 @@ Hero section */
   align-items: center;
   justify-self: end;
   position: absolute;
-  transform: translateX(-10vw);
+  /* transform: translateX(-10vw); */
   z-index: 1;
 }
 
@@ -240,36 +244,94 @@ Hero section */
 
 /* Featured Products Section */
 
-.img_box img {
-  height:100%;
-  width:100%;
-}
-
-.splide__track {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img_box {
-  object-fit: hidden; /*Maintain aspect ratio*/
-  background-color: #FFC857;
-}
-
 .featured-products {
-  background-color: #3CAEA3;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  flex-direction: columns; */
+  flex-wrap: wrap;
 }
 
 .featured-products h1 {
-  font-size: 40px;
+  margin-bottom: 30px;
 }
 
-/* .splide__slide {
-  height: 400px;
-} */
+
+.img_box {
+  position: relative;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+  background-color: #FFC857;
+}
+
+.img_box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img_box {
+  width: 500px;
+}
+
+.caption {
+  margin-top: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  text-align: left;
+}
+
+.caption h4 {
+  /* color: #000; */
+  background-color: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); /* Chrome 10-25, Safari 5.1-6 */;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.caption p {
+  font-size: 14px;
+  color: #666565;
+}
+
+.splide__slide .caption {
+  visibility: none;
+}
+
+.splide__slide.is-active .caption {
+  visibility: visible;
+}
+
+/* Easy Home Remedies Section */
+
+.EHR {
+  background-color: #3CAEA3;
+  margin-top: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+.EHR div {
+  display: flex;
+}
+
+.remedy {
+  margin: 50px;
+  background-color: #FFC857;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.remedy img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
