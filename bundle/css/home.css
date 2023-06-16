@@ -264,14 +264,8 @@ Hero section */
   position: absolute;
   top: 100vh;
 }
-<<<<<<< Updated upstream
-
-/* About Us */
-
-=======
  
 /* About Us section */
->>>>>>> Stashed changes
 .aboutUs {
   margin-top: 100px;
   display: grid;
@@ -413,11 +407,7 @@ Hero section */
   }
 }
 
-<<<<<<< Updated upstream
-/* Featured Products Section */
-=======
 /* Featured Products and suggested products Section */
->>>>>>> Stashed changes
 
 .featured-products {
   text-align: center;
