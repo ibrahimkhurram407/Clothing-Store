@@ -264,9 +264,14 @@ Hero section */
   position: absolute;
   top: 100vh;
 }
+<<<<<<< Updated upstream
 
 /* About Us */
 
+=======
+ 
+/* About Us section */
+>>>>>>> Stashed changes
 .aboutUs {
   margin-top: 100px;
   display: grid;
@@ -334,7 +339,7 @@ Hero section */
   transform: translateX(-15vw);
   z-index: 1;
 }
-
+/* About Us responsiveness */
 @media (min-width: 1450px) and (max-width: 1600px){
   .aboutUs >div:nth-child(1){
     transform: translateX(+13vw);
@@ -399,10 +404,6 @@ Hero section */
     width: 600px;
   }
 
-  /* .aboutUs>div:nth-child(2) {
-    margin-top: 50px;
-  } */
-
   .aboutUs div>div:nth-child(1) {
     margin-left: 0;
     margin-right: 0;
@@ -412,7 +413,11 @@ Hero section */
   }
 }
 
+<<<<<<< Updated upstream
 /* Featured Products Section */
+=======
+/* Featured Products and suggested products Section */
+>>>>>>> Stashed changes
 
 .featured-products {
   text-align: center;
@@ -474,6 +479,34 @@ Hero section */
 .splide__slide.is-active .caption {
   visibility: visible;
 }
+/* Hair Conditions Section */
+.HC {
+  margin-top: 70px;
+  padding: 30px;
+  width: 100%;
+  background-color: #3CAEA3;
+  text-align: center;
+}
+
+.condition {
+  margin: 20px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: #FFC857;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Removed the comma from grid-template-columns */
+}
+
+.condition img {
+  border-radius: 20px;
+  height: 200px;
+}
+
+
+
 
 /* Easy Home Remedies Section */
 .EHR {

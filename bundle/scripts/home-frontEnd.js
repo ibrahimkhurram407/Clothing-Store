@@ -48,3 +48,25 @@ var splide = new Splide('.splide', {
 });
 
 splide.mount();
+
+var splide1 = new Splide('.splide-1', {
+  type: 'loop',
+  perPage: 3,
+  perMove: 1,
+  focus: 0,
+  gap: "20px",
+  drag: "none",
+  snap: true,
+  autoplay: true,
+  omitEnd: true,
+  breakpoints: {
+    768: {
+      perPage: 1,
+    },
+    992: {
+      perPage: 2,
+    }
+  }
+});
+
+splide1.mount();
