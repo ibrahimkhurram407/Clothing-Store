@@ -15,7 +15,12 @@ p {
 }
 
 main {
-  height: calc(100vh - 146px - 70px);
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* nav bar css */
