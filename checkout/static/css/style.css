@@ -1,5 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* universal fonts and colors */
+h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  color: #fff;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  /* color: #fff; */
+}
+
+main {
+  height: calc(100vh - 146px - 70px);
+}
+
+/* nav bar css */
+nav {
+  padding: 1px 20px;
+  background-color: #3CAEA3;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+  min-width: 294px;
+}
+
+nav h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+}
+
+nav img {
+  height: 70px;
+  margin-right: 20vw;
+}
+
+/* nav elements css */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul li {
+  display: flex;
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+ul li img {
+  height: 40px;
+  margin: 0px;
+  /* margin-top: 22px; */
+}
+
+ul li a:hover {
+  background-color: #5b9e7d;
+  color: #fff;
+}
+
+.login {
+  /* font-size: 20px; */
+  border: 1px solid #8e918e;
+  border-radius: 20px;
+  /* padding: 1px 20px 3px 20px; */
+  background-color: #FFC857;
+  /* text-align: center;
+    align-items: center; */
+}
+
+
 /* header */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,13 +144,16 @@ nav ul li {
   margin: auto;
   padding-left: 250px;
   padding-right: 250px;
-}
+}*/
 
 .count {
   display: flex;
   border-radius: 50%;
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20px;
   font-size: 13px;
   color: #fff;
   font-style: normal;
@@ -61,13 +161,14 @@ nav ul li {
   text-align: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  transform: translateX(25px);
-  transform: translateY(-25px);
+  position: absolute;
+  transform: translateX(-40px);
+  transform: translateY(15px);
 }
 
-.cart {
+/* .cart {
   transform: translateY(23px);
-}
+}  */
 
 /* Main */
 .cart-parent {
@@ -121,6 +222,7 @@ table {
 
 /* Checkout container */
 .checkout {
+  margin: 10px;
   font-weight: bold;
   text-align: center;
   font-size: 30px;
@@ -237,7 +339,7 @@ label {
 .btn {
   /* background: radial-gradient(circle at center, #888787 80%, #6e6b6b); */
   background-color: #d3cccc;
-  color: #555555;
+  color: #000;
   padding: 10px;
   margin: 10px 0;
   border: none;
@@ -409,34 +511,35 @@ form {
 }
 
 
-/* Footer */
+/* footer */
+
 footer {
-  background-color: #f7f7f7;
-  padding: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.footer-container {
+  background-color: #D9D9D9;
+  border-top: 2px solid black;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  max-width: 960px;
-  margin: 0 auto;
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
 }
 
-.company-name {
-  font-size: 24px;
-  font-weight: bold;
+.fs {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+  gap: 10px; /* Add some spacing between image and text */
 }
 
-.company-email {
-  font-size: 18px;
+.fs img {
+  height: 30px;
+  max-width: 100%; /* Adjust the width of the image */
 }
 
-.company-copyright {
-  font-size: 14px;
+.fs p {
+  margin: 0; /* Remove default margin */
 }
+
 
 /* ______________________________________ */
 /* Add mobile responsive styles
