@@ -55,8 +55,58 @@
     </ul>
   </nav>
   <main>
-    <!-- Idher ho ga -->
-  
+    <section>
+      <h1 class="display-5 my-5 text-center">Compare Page in JS</h1>
+      <div class="container">
+        <div class="col-md-9 mx-auto">
+          <table class="table">
+            <tr class="bg-light">
+              <th>Select Product</th>
+              <th width="300px">
+                <select class="form-control" id="select1" onchange="item1(this.value)">
+                  <option value="0">-- Select Anyone --</option>
+                </select>
+              </th>
+              <th width="300px">
+                <select class="form-control" id="select2" onchange="item2(this.value)">
+                  <option value="0">-- Select Anyone --</option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th>Product Image</th>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                  id="img1" alt=" ">
+              </td>
+              <td>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                  id="img2" alt=" ">
+              </td>
+            </tr>
+            <tr>
+              <th>Product Price</th>
+              <td id="price1">N/A</td>
+              <td id="price2">N/A</td>
+            </tr>
+            <tr>
+              <th>Product Description</th>
+              <td id="desc1">N/A</td>
+              <td id="desc2">N/A</td>
+            </tr>
+            <tr>
+              <th>Product Brand</th>
+              <td id="brand1">N/A</td>
+              <td id="brand2">N/A</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer>
     <div>
@@ -74,13 +124,15 @@
     </div>
   </footer>
 
-  <script src="../bundle/splide-4.1.3/dist/js/splide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="./static/scripts/product.js"></script>
+  <script src="./src/data.js"></script>
+  <script src="./static/script/product.js"></script>
 </body>
 
 </html>

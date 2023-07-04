@@ -101,7 +101,7 @@ Hero section */
   border-spacing: 30px;
   margin-bottom: 200px;
   width: 100%;
-  height: calc(100vh-80px);
+  height: calc(100vh - 80px);
 }
 
 .hero-text {
