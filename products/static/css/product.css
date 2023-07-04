@@ -14,15 +14,6 @@ p {
   /* color: #fff; */
 }
 
-main {
-  height: fit-content;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* nav bar css */
 nav {
   padding: 1px 20px;
@@ -99,11 +90,41 @@ ul li a:hover {
     align-items: center; */
 }
 
+.count {
+  display: flex;
+  border-radius: 50%;
+  width: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20px;
+  font-size: 13px;
+  color: #fff;
+  font-style: normal;
+  background-color: red;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  transform: translateX(-40px);
+  transform: translateY(15px);
+}
+
 /* Main */
 td > img {
   width: 100%;
   height: 250px;
   object-fit: contain;
+}
+
+main {
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 70px - 147px);
 }
 
 /* footer */

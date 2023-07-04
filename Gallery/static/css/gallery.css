@@ -99,6 +99,26 @@ ul li a:hover {
     align-items: center; */
 }
 
+.count {
+  display: flex;
+  border-radius: 50%;
+  width: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 20px;
+  font-size: 13px;
+  color: #fff;
+  font-style: normal;
+  background-color: red;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  transform: translateX(-40px);
+  transform: translateY(15px);
+}
+
 /* main */
 main {
   padding: 20px;

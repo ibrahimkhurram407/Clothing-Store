@@ -17,46 +17,51 @@
 </head>
 
 <body>
+  <!-- header -->
   <nav>
     <header>
-      <h1>Hair Revival Hub</h1>
+        <h1>Hair Revival Hub</h1>
     </header>
     <img src="../bundle/images/accent-nav.png">
     <ul class="nav justify-content-end">
-      <li>
-        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown" data-bs-toggle="dropdown">Shop</a>
-        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
-          <li><a href="#" class="dropdown-item">Products</a></li>
-          <li><a href="#" class="dropdown-item">Equipments</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown" data-bs-toggle="dropdown">
-          <img src="../bundle/images/account-icon.png" style="cursor:pointer;" alt="Account" onclick="redirect(this)">
-        </a>
-        <div class="dropdown-menu" aria-labelledby="shopDropdown">
-          <a href="#">Sign Up</a>
-          <a href="#">Login</a>
-          <a href="#">Settings</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <img src="../bundle/images/cart-icon.png" style="cursor:pointer;" alt="Cart" onclick="redirect(this)">
-      </li>
+        <li>
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown"
+                data-bs-toggle="dropdown">Shop</a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                <li><a href="../products/index.html" class="dropdown-item">Products</a></li>
+                <li><a href="../products/index.html" class="dropdown-item">Equipments</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="../Gallery/index.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="../ContactUs/index.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text-light dropdown-toggle" id="shopDropdown" data-bs-toggle="dropdown">
+                <img src="../bundle/images/account-icon.png" style="cursor:pointer;" alt="Account"
+                    onclick="redirect(this)">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                <li><a href="#" class="dropdown-item">Sign Up</a></li>
+                <li><a href="#" class="dropdown-item">Login</a></li>
+                <li><a href="#" class="dropdown-item">Settings</a></li>
+            </ul>
+        </li>
+        
+        <li class="nav-item">
+            <img src="../bundle/images/cart-icon.png" style="cursor:pointer;" alt="Cart" onclick="redirect(this)">
+            <p id="count" class="count">0</p>
+        </li>
     </ul>
-  </nav>
+</nav>
   <main>
     <section>
-      <h1 class="display-5 my-5 text-center">Compare Page in JS</h1>
+      <h1 class="display-5 my-5 text-center" style="color: black;">Product Comparison</h1>
       <div class="container">
         <div class="col-md-9 mx-auto">
           <table class="table">
