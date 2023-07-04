@@ -409,6 +409,10 @@ Hero section */
 
 /* Featured Products and suggested products Section */
 
+.recommendedEquipments h1{
+  margin-bottom: 30px;
+}
+
 .featured-products {
   text-align: center;
   /* display: flex;
@@ -476,6 +480,7 @@ Hero section */
   width: 100%;
   background-color: #3CAEA3;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .condition {
