@@ -1,4 +1,4 @@
-# Clothing-Store
+# Hair Revival Hub
 <h1 align="center">Hair Revival Hub</h1>
 
 <p align="center">
